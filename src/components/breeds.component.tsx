@@ -92,7 +92,7 @@ const Breeds = withRouter(({ history, location }) => {
             <Form>
                 <Form.Group>
                     <Form.Label>Breed</Form.Label>
-                    <Form.Control as="select" onChange={handleSelectChange} style={{ width: 330 }} value={breedId} >
+                    <Form.Control as="select" onChange={handleSelectChange} style={{ width: 330 }} value={breedId} disabled={isLoading} >
                         <option value="">Select breed</option>
                         {
                             breeds.map((item: any) => (
